@@ -14,6 +14,7 @@ public class InventoryUI : MonoBehaviour
 
     [SerializeField] Text categoryText;
     [SerializeField] Image itemIcon;
+    [SerializeField] Sprite emptyIcon;
     [SerializeField] Text itemDescription;
 
     [SerializeField] Image upArrow;
@@ -141,6 +142,10 @@ public class InventoryUI : MonoBehaviour
             var item = slots[selectedItem].Item;
             itemIcon.sprite = item.Icon;
             itemDescription.text = item.Description;
+        }
+        else if(slots.Count == 0)
+        {
+            itemIcon.sprite = emptyIcon;
         }
 
         HandleScrolling();
