@@ -32,7 +32,7 @@ public class DialogManager : MonoBehaviour
         yield return TypeDialog(text);
         if (waitForInput)
         {
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
         }
 
         if (choices != null && choices.Count > 1)
@@ -68,7 +68,7 @@ public class DialogManager : MonoBehaviour
         {
             AudioManager.i.PlaySfx(AudioId.UISelect);
             yield return TypeDialog(line);
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
         }
 
         if (choices != null && choices.Count > 1)

@@ -10,24 +10,33 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] List<Sprite> defaultWalkRightSprites;
     [SerializeField] List<Sprite> defaultWalkLeftSprites;
 
+    [Header("Default Attack")]
+    [SerializeField] List<Sprite> defaultAttackRightSprites;
+    [SerializeField] List<Sprite> defaultAttackLeftSprites;
 
     [Header("Skin 2")]
-    [SerializeField] List<Sprite> skin2WalkDownSprites;
-    [SerializeField] List<Sprite> skin2WalkUpSprites;
     [SerializeField] List<Sprite> skin2WalkRightSprites;
     [SerializeField] List<Sprite> skin2WalkLeftSprites;
 
+    [Header("Skin 2")]
+    [SerializeField] List<Sprite> skin2AttackRightSprites;
+    [SerializeField] List<Sprite> skin2AttackLeftSprites;
+
     [Header("Skin 3")]
-    [SerializeField] List<Sprite> skin3WalkDownSprites;
-    [SerializeField] List<Sprite> skin3WalkUpSprites;
     [SerializeField] List<Sprite> skin3WalkRightSprites;
     [SerializeField] List<Sprite> skin3WalkLeftSprites;
 
+    [Header("Skin 3")]
+    [SerializeField] List<Sprite> skin3AttackRightSprites;
+    [SerializeField] List<Sprite> skin3AttackLeftSprites;
+
     [Header("Skin 4")]
-    [SerializeField] List<Sprite> skin4WalkDownSprites;
-    [SerializeField] List<Sprite> skin4WalkUpSprites;
     [SerializeField] List<Sprite> skin4WalkRightSprites;
     [SerializeField] List<Sprite> skin4WalkLeftSprites;
+
+    [Header("Skin 4")]
+    [SerializeField] List<Sprite> skin4AttackRightSprites;
+    [SerializeField] List<Sprite> skin4AttackLeftSprites;
 
     [SerializeField] List<Sprite> defaultSkin;
 
@@ -48,20 +57,26 @@ public class CharacterAnimator : MonoBehaviour
     SpriteAnimator defaultWalkRightAnim;
     SpriteAnimator defaultWalkLeftAnim;
 
-    SpriteAnimator skin2WalkDownAnim;
-    SpriteAnimator skin2WalkUpAnim;
+    SpriteAnimator defaultAttackRightAnim;
+    SpriteAnimator defaultAttackLeftAnim;
+
     SpriteAnimator skin2WalkRightAnim;
     SpriteAnimator skin2WalkLeftAnim;
 
-    SpriteAnimator skin3WalkDownAnim;
-    SpriteAnimator skin3WalkUpAnim;
+    SpriteAnimator skin2AttackRightAnim;
+    SpriteAnimator skin2AttackLeftAnim;
+
     SpriteAnimator skin3WalkRightAnim;
     SpriteAnimator skin3WalkLeftAnim;
 
-    SpriteAnimator skin4WalkDownAnim;
-    SpriteAnimator skin4WalkUpAnim;
+    SpriteAnimator skin3AttackRightAnim;
+    SpriteAnimator skin3AttackLeftAnim;
+
     SpriteAnimator skin4WalkRightAnim;
     SpriteAnimator skin4WalkLeftAnim;
+
+    SpriteAnimator skin4AttackRightAnim;
+    SpriteAnimator skin4AttackLeftAnim;
 
     SpriteAnimator currentAnim;
     bool wasPreviouslyMoving;
@@ -77,20 +92,26 @@ public class CharacterAnimator : MonoBehaviour
         defaultWalkRightAnim = new SpriteAnimator(defaultWalkRightSprites, spriteRenderer);
         defaultWalkLeftAnim = new SpriteAnimator(defaultWalkLeftSprites, spriteRenderer);
 
-        skin2WalkDownAnim = new SpriteAnimator(skin2WalkDownSprites, spriteRenderer);
-        skin2WalkUpAnim = new SpriteAnimator(skin2WalkUpSprites, spriteRenderer);
+        defaultAttackRightAnim = new SpriteAnimator(defaultAttackRightSprites, spriteRenderer);
+        defaultAttackLeftAnim = new SpriteAnimator(defaultAttackLeftSprites, spriteRenderer);
+
         skin2WalkRightAnim = new SpriteAnimator(skin2WalkRightSprites, spriteRenderer);
         skin2WalkLeftAnim = new SpriteAnimator(skin2WalkLeftSprites, spriteRenderer);
 
-        skin3WalkDownAnim = new SpriteAnimator(skin3WalkDownSprites, spriteRenderer);
-        skin3WalkUpAnim = new SpriteAnimator(skin3WalkUpSprites, spriteRenderer);
+        skin2AttackRightAnim = new SpriteAnimator(skin2AttackRightSprites, spriteRenderer);
+        skin2AttackLeftAnim = new SpriteAnimator(skin2AttackLeftSprites, spriteRenderer);
+
         skin3WalkRightAnim = new SpriteAnimator(skin3WalkRightSprites, spriteRenderer);
         skin3WalkLeftAnim = new SpriteAnimator(skin3WalkLeftSprites, spriteRenderer);
 
-        skin4WalkDownAnim = new SpriteAnimator(skin4WalkDownSprites, spriteRenderer);
-        skin4WalkUpAnim = new SpriteAnimator(skin4WalkUpSprites, spriteRenderer);
+        skin3AttackRightAnim = new SpriteAnimator(skin3AttackRightSprites, spriteRenderer);
+        skin3AttackLeftAnim = new SpriteAnimator(skin3AttackLeftSprites, spriteRenderer);
+
         skin4WalkRightAnim = new SpriteAnimator(skin4WalkRightSprites, spriteRenderer);
         skin4WalkLeftAnim = new SpriteAnimator(skin4WalkLeftSprites, spriteRenderer);
+
+        skin4AttackRightAnim = new SpriteAnimator(skin4AttackRightSprites, spriteRenderer);
+        skin4AttackLeftAnim = new SpriteAnimator(skin4AttackLeftSprites, spriteRenderer);
 
         currentAnim = new SpriteAnimator(defaultSkin, spriteRenderer);
     }
@@ -119,6 +140,27 @@ public class CharacterAnimator : MonoBehaviour
                 else
                 {
                     currentAnim = defaultWalkLeftAnim;
+                }
+            }
+
+            else if (Input.GetKey(KeyCode.C) && tag == "Player" && Right == true)
+            {
+                currentAnim = defaultAttackRightAnim;
+            }
+            else if (Input.GetKeyDown(KeyCode.C) && tag == "Player" && Right == false)
+            {
+                Right = false;
+                currentAnim = defaultAttackLeftAnim;
+            }
+            else if (Input.GetKeyDown(KeyCode.C) && tag == "Player" && (MoveY == 1 || Input.GetKeyDown(KeyCode.C) && tag == "Player" && MoveY == -1))
+            {
+                if (Right)
+                {
+                    currentAnim = defaultAttackRightAnim;
+                }
+                else
+                {
+                    currentAnim = defaultAttackLeftAnim;
                 }
             }
 
@@ -215,5 +257,10 @@ public class CharacterAnimator : MonoBehaviour
             spriteRenderer.sprite = currentAnim.Frames[0];
 
         wasPreviouslyMoving = IsMoving;
+    }
+
+    public void AttackAnim()
+    {
+
     }
 }

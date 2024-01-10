@@ -15,8 +15,7 @@ public class Pickup : MonoBehaviour, Interactable
 
             Used = true;
 
-            GetComponent<SpriteRenderer>().enabled = false;
-            GetComponent<BoxCollider2D>().enabled = false;
+            Destroy(transform.parent.gameObject);
 
             string playerName = initiator.GetComponent<PlayerController>().Name;
 

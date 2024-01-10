@@ -36,9 +36,9 @@ public class CountSelectorUI : MonoBehaviour
     {
         int prevCount = currentCount;
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
             ++currentCount;
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             --currentCount;
 
         currentCount = Mathf.Clamp(currentCount, 1, maxCount);

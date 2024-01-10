@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
         {
             playerController.HandleUpdate();
 
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Tab))
             {
                 menuController.OpenMenu();
                 state = GameState.Menu;

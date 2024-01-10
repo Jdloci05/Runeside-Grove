@@ -46,10 +46,14 @@ public class PlayerController : MonoBehaviour
 
         character.HandleUpdate();
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(Interact());
             Destroy(GameObject.FindWithTag("IntroTxt"));
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            StartCoroutine(Destroyinteracteable());
         }
             
     }
@@ -63,6 +67,19 @@ public class PlayerController : MonoBehaviour
         if (collider != null)
         {
            yield return collider.GetComponent<Interactable>()?.Interact(transform);
+        }
+
+    }
+
+    IEnumerator Destroyinteracteable()
+    {
+        var facingDir = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
+        var interactPos = transform.position + facingDir;
+
+        var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.i.Destroyinteracteable);
+        if (collider != null)
+        {
+            yield return collider.GetComponent<DestroyInteractable>()?.Destroyinteracteable(transform);
         }
 
     }

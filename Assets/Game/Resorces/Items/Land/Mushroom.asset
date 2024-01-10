@@ -15,6 +15,6 @@ MonoBehaviour:
   name: Mushroom
   description: Mushroom, did you know that in addition to being a good source of
     food, the mushroom family is very important for the environment
-  icon: {fileID: 1324236224, guid: 64eb714b71e051a40906226fe45fb1b3, type: 3}
+  icon: {fileID: -2381755, guid: 804a5e2e069502f4eb751ff9d9e27345, type: 3}
   price: 100
   isSellable: 1

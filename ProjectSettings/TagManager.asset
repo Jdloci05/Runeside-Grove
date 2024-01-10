@@ -13,11 +13,12 @@ TagManager:
   - Intro
   - IntroTxt
   - ShopC
+  - ObjectsToCull
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Destroy
   - Water
   - UI
   - SolidObjects
@@ -47,8 +48,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Water
+    uniqueID: 3166189985
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UnderBackground
+    uniqueID: 1492712973
+    locked: 0
+  - name: AboveUnder
+    uniqueID: 2292801339
     locked: 0
   - name: Background
     uniqueID: 1283420871
@@ -58,6 +68,9 @@ TagManager:
     locked: 0
   - name: AboveBackground
     uniqueID: 3277449779
+    locked: 0
+  - name: Other solids
+    uniqueID: 2718882617
     locked: 0
   - name: Foreground
     uniqueID: 4059481839

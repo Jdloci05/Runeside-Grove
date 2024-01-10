@@ -15,7 +15,7 @@ public class SkinManager : MonoBehaviour
         if (SkinUI.activeSelf)
         {
             walletUI.Show();
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 SkinUI.SetActive(false);
                 walletUI.Close();
