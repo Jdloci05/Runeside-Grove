@@ -21,9 +21,19 @@ public class PlayerAnimator : MonoBehaviour
 
     void Update()
     {
+
         if (!isAttacking && Input.GetMouseButtonDown(0) && tag == "Player")
         {
             StartCoroutine(AttackAnimation());
+        }
+
+        if (IsMoving)
+        {
+            animator.SetBool("Walking", true);
+        }
+        else
+        {
+            animator.SetBool("Walking", false);
         }
 
         if (!isAttacking)
@@ -61,7 +71,6 @@ public class PlayerAnimator : MonoBehaviour
         {
             animator.SetFloat("moveY", -0.4f);
         }
-
     }
 
     IEnumerator AttackAnimation()
