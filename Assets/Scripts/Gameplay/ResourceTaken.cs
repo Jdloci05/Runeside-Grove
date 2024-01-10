@@ -16,11 +16,16 @@ public class ResourceTaken : MonoBehaviour, DestroyInteractable
 
     public IEnumerator Destroyinteracteable(Transform initiator)
     {
-        animator.runtimeAnimatorController = newAnimatorController;
-        Invoke("Final",0.30f);
+        Invoke("Destroyed", 0.35f);
         yield return null;
     }
     
+    public void Destroyed()
+    {
+        animator.runtimeAnimatorController = newAnimatorController;
+        Invoke("Final", 0.30f);
+    }
+
     public void Final()
     {
         Destroy(gameObject);

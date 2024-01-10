@@ -3,20 +3,20 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public float moveSpeed;
 
     public bool IsMoving { get; private set; }
 
-    CharacterAnimator animator;
+    PlayerAnimator animator;
 
     private void Awake()
     {
-        animator = GetComponent<CharacterAnimator>();
+        animator = GetComponent<PlayerAnimator>();
     }
 
-    public IEnumerator Move(Vector3 moveVec, Action OnMoveOver=null)
+    public IEnumerator Move(Vector3 moveVec, Action OnMoveOver = null)
     {
         animator.MoveX = Mathf.Clamp(moveVec.x, -1f, 1f);
         animator.MoveY = Mathf.Clamp(moveVec.y, -1f, 1f);
@@ -80,7 +80,7 @@ public class Character : MonoBehaviour
             Debug.LogError("Error in Look Towards: You can't ask the character to look diagonally");
     }
 
-    public CharacterAnimator Animator
+    public PlayerAnimator Animator
     {
         get => animator;
     }

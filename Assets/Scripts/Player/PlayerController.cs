@@ -10,12 +10,12 @@ public class PlayerController : MonoBehaviour
 
     public GameObject shopClothes;
 
-    private Character character;
+    private Player player;
 
     private void Awake()
     {
 
-        character = GetComponent<Character>();
+        player = GetComponent<Player>();
 
     }
 
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     public void HandleUpdate()
     {
-        if (!character.IsMoving)
+        if (!player.IsMoving)
         {
             input.x = Input.GetAxisRaw("Horizontal");
             input.y = Input.GetAxisRaw("Vertical");
@@ -40,18 +40,18 @@ public class PlayerController : MonoBehaviour
 
             if (input != Vector2.zero)
             {
-                StartCoroutine(character.Move(input));
+                StartCoroutine(player.Move(input));
             }
         }
 
-        character.HandleUpdate();
+        player.HandleUpdate();
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(Interact());
             Destroy(GameObject.FindWithTag("IntroTxt"));
         }
-        else if (Input.GetKeyDown(KeyCode.C))
+        else if (Input.GetMouseButtonDown(0))
         {
             StartCoroutine(Destroyinteracteable());
         }
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Interact()
     {
-        var facingDir = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
+        var facingDir = new Vector3(player.Animator.MoveX, player.Animator.MoveY);
         var interactPos = transform.position + facingDir;
 
         var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.i.InteractableLayer);
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Destroyinteracteable()
     {
-        var facingDir = new Vector3(character.Animator.MoveX, character.Animator.MoveY);
+        var facingDir = new Vector3(player.Animator.MoveX, player.Animator.MoveY);
         var interactPos = transform.position + facingDir;
 
         var collider = Physics2D.OverlapCircle(interactPos, 0.3f, GameLayers.i.Destroyinteracteable);

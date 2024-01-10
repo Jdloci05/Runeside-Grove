@@ -28,6 +28,7 @@ public class ManualCulling : MonoBehaviour
 
     void Update()
     {
+
         foreach (Transform objTransform in objectsToCull)
         {
             Vector3 viewportPos = mainCamera.WorldToViewportPoint(objTransform.position);

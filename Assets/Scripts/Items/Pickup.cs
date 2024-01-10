@@ -15,7 +15,7 @@ public class Pickup : MonoBehaviour, Interactable
 
             Used = true;
 
-            Destroy(transform.parent.gameObject);
+            Destroy(gameObject);
 
             string playerName = initiator.GetComponent<PlayerController>().Name;
 

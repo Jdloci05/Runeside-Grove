@@ -702,7 +702,7 @@ GameObject:
   - component: {fileID: 44563908}
   - component: {fileID: 44563907}
   - component: {fileID: 44563906}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,20 +905,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -1122,20 +1114,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -1403,7 +1387,7 @@ GameObject:
   - component: {fileID: 102402489}
   - component: {fileID: 102402488}
   - component: {fileID: 102402487}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1606,20 +1590,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -2098,20 +2074,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -19076,7 +19044,7 @@ GameObject:
   - component: {fileID: 269246600}
   - component: {fileID: 269246599}
   - component: {fileID: 269246598}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19279,20 +19247,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -19954,20 +19914,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -21386,20 +21338,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -21770,20 +21714,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -22044,20 +21980,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -22281,20 +22209,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: 13715491, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -22515,20 +22435,12 @@ MonoBehaviour:
   - {fileID: 2007222951, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: -423911274, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: -482982017, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -648909151, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -22749,20 +22661,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -22909,7 +22813,7 @@ GameObject:
   - component: {fileID: 497488144}
   - component: {fileID: 497488143}
   - component: {fileID: 497488142}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23150,20 +23054,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -27713,20 +27609,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: 1829362982, guid: e3405595dc7e2664e9180ccb3a5deb4b, type: 3}
   IsPlayer: 0
@@ -27930,20 +27818,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -28644,20 +28524,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -28883,20 +28755,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -29374,7 +29238,7 @@ GameObject:
   - component: {fileID: 667397219}
   - component: {fileID: 667397218}
   - component: {fileID: 667397217}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Sheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29707,20 +29571,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: 13715491, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -29919,7 +29775,7 @@ GameObject:
   - component: {fileID: 745072853}
   - component: {fileID: 745072852}
   - component: {fileID: 745072851}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31054,20 +30910,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -2124806354, guid: e3405595dc7e2664e9180ccb3a5deb4b, type: 3}
   IsPlayer: 0
@@ -31371,7 +31219,7 @@ GameObject:
   - component: {fileID: 821198413}
   - component: {fileID: 821198412}
   - component: {fileID: 821198411}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32209,20 +32057,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -32598,20 +32438,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -32805,7 +32637,7 @@ GameObject:
   - component: {fileID: 936558867}
   - component: {fileID: 936558871}
   - component: {fileID: 936558870}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33584,20 +33416,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -44218,7 +44042,7 @@ GameObject:
   - component: {fileID: 1137825662}
   - component: {fileID: 1137825661}
   - component: {fileID: 1137825660}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44517,20 +44341,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -45779,20 +45595,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -46149,7 +45957,7 @@ GameObject:
   - component: {fileID: 1244545171}
   - component: {fileID: 1244545170}
   - component: {fileID: 1244545169}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46421,7 +46229,7 @@ GameObject:
   - component: {fileID: 1272189682}
   - component: {fileID: 1272189681}
   - component: {fileID: 1272189680}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46629,20 +46437,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -47718,20 +47518,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -47933,20 +47725,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -50970,20 +50754,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -51258,7 +51034,7 @@ GameObject:
   - component: {fileID: 1589251625}
   - component: {fileID: 1589251624}
   - component: {fileID: 1589251623}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51749,20 +51525,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -52108,20 +51876,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -52329,20 +52089,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -52546,20 +52298,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -488769511, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -54983,20 +54727,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: 13715491, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -55475,20 +55211,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -338512936, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -56031,7 +55759,7 @@ GameObject:
   - component: {fileID: 1883077301}
   - component: {fileID: 1883077300}
   - component: {fileID: 1883077299}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: cuttable tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61242,20 +60970,12 @@ MonoBehaviour:
   - {fileID: 1107117044, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 1195008628, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   - {fileID: 197452001, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: 13715491, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -66004,20 +65724,12 @@ MonoBehaviour:
   - {fileID: -917178368, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: -2138082119, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
   - {fileID: 2007507385, guid: 6cbaa1d61c9df5046927f7f05f6e070d, type: 3}
-  defaultAttackRightSprites: []
-  defaultAttackLeftSprites: []
   skin2WalkRightSprites: []
   skin2WalkLeftSprites: []
-  skin2AttackRightSprites: []
-  skin2AttackLeftSprites: []
   skin3WalkRightSprites: []
   skin3WalkLeftSprites: []
-  skin3AttackRightSprites: []
-  skin3AttackLeftSprites: []
   skin4WalkRightSprites: []
   skin4WalkLeftSprites: []
-  skin4AttackRightSprites: []
-  skin4AttackLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
   IsPlayer: 0
@@ -66333,6 +66045,18 @@ PrefabInstance:
       propertyPath: dialog.lines.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3604466729303829541, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604466729303829541, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604466729303829543, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3604466729303829543, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
       propertyPath: defaultAttackLeftSprites.Array.size
       value: 6
@@ -66449,11 +66173,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5064420242552997945, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
+      propertyPath: m_Size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064420242552997945, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064420242552997945, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5064420242552997947, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3604466729303829542, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
+    - {fileID: 3604466729303829543, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df4a8389f20701b46a9d19c0736cc850, type: 3}
 --- !u!114 &8380578799521186615 stripped
 MonoBehaviour:
@@ -66466,3 +66204,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7a41ffc454c39488679f5d76b019e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8380578799521186623
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693318896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f4828d0f3fb18f46a2b56a838f1399a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8380578799521186624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693318896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e376744c7a9a9842934d203e5c814bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8380578799521186625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693318896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 800bc3e18a3f9ed478fcc58413fbf29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
