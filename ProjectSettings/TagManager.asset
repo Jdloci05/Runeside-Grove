@@ -60,17 +60,17 @@ TagManager:
   - name: AboveUnder
     uniqueID: 2292801339
     locked: 0
+  - name: Other solids
+    uniqueID: 2718882617
+    locked: 0
   - name: Background
     uniqueID: 1283420871
-    locked: 0
-  - name: Others
-    uniqueID: 918589847
     locked: 0
   - name: AboveBackground
     uniqueID: 3277449779
     locked: 0
-  - name: Other solids
-    uniqueID: 2718882617
+  - name: Others
+    uniqueID: 918589847
     locked: 0
   - name: Foreground
     uniqueID: 4059481839
@@ -83,4 +83,7 @@ TagManager:
     locked: 0
   - name: AbovePlayer
     uniqueID: 940327097
+    locked: 0
+  - name: AboveAll
+    uniqueID: 3581588201
     locked: 0
