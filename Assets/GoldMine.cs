@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
-public class ResourceTaken : MonoBehaviour, DestroyInteractable
+public class GoldMine : MonoBehaviour, DestroyInteractable
 {
     public GameObject pickup;
-    public RuntimeAnimatorController newAnimatorController;
-    Animator animator;
+    public Sprite newSprite;
+    public GameObject money;
+    SpriteRenderer sprite;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     public IEnumerator Destroyinteracteable(Transform initiator)
@@ -19,16 +19,17 @@ public class ResourceTaken : MonoBehaviour, DestroyInteractable
         Invoke("Destroyed", 0.35f);
         yield return null;
     }
-    
+
     public void Destroyed()
     {
-        animator.runtimeAnimatorController = newAnimatorController;
+        sprite.sprite = newSprite;
+        money.SetActive(true);
         Invoke("Final", 0.30f);
     }
 
     public virtual void Final()
     {
-        gameObject.SetActive(false);
+        money.SetActive(false);
         pickup.SetActive(true);
     }
 }

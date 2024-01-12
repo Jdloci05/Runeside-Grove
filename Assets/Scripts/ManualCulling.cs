@@ -10,15 +10,14 @@ public class ManualCulling : MonoBehaviour
 
     void Start()
     {
-        mainCamera = Camera.main;
-        FindObjectsWithTag();
+        mainCamera = Camera.main;        
     }
 
     void FindObjectsWithTag()
     {
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("ObjectsToCull");
 
-        // Almacena los objetos encontrados con la etiqueta en objectsToCull
+        // Store the found objects with the tag in objectsToCull
         objectsToCull = new Transform[objectsWithTag.Length];
         for (int i = 0; i < objectsWithTag.Length; i++)
         {
@@ -28,23 +27,32 @@ public class ManualCulling : MonoBehaviour
 
     void Update()
     {
+        FindObjectsWithTag();
 
         foreach (Transform objTransform in objectsToCull)
         {
             Vector3 viewportPos = mainCamera.WorldToViewportPoint(objTransform.position);
 
-            float visibilityThreshold = 0.2f; // Umbral de visibilidad (ajústalo según sea necesario)
+            float visibilityThreshold = 0.2f; // Visibility threshold (adjust as needed)
 
-            if (viewportPos.x < -visibilityThreshold || viewportPos.x > 1 + visibilityThreshold ||
-                viewportPos.y < -visibilityThreshold || viewportPos.y > 1 + visibilityThreshold)
+            SpriteRenderer spriteRenderer = objTransform.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
             {
-                objTransform.gameObject.SetActive(false); // Object is significantly outside of view, deactivate it.
+                if (viewportPos.x < -visibilityThreshold || viewportPos.x > 1 + visibilityThreshold ||
+                    viewportPos.y < -visibilityThreshold || viewportPos.y > 1 + visibilityThreshold)
+                {
+                    spriteRenderer.enabled = false; // SpriteRenderer is significantly outside of view, disable it.
+                }
+                else
+                {
+                    spriteRenderer.enabled = true; // SpriteRenderer is at least partially inside view, enable it.
+                }
             }
             else
             {
-                objTransform.gameObject.SetActive(true); // Object is at least partially inside view, activate it.
+                Debug.LogWarning("SpriteRenderer not found on object with tag 'ObjectsToCull'.");
             }
         }
-
     }
 }
+

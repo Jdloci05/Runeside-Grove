@@ -41,8 +41,6 @@ public class PlayerAnimator : MonoBehaviour
             // Check movement direction and set animator parameters
             SetMovementAnimations();
         }
-
-        // Handle other logic...
     }
 
     void SetMovementAnimations()

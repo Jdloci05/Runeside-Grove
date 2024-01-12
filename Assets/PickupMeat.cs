@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup : MonoBehaviour, Interactable
+public class PickupMeat : Pickup
 {
-    public ItemBase item;
-
-    public bool Used { get; set; } = false;
-    public virtual IEnumerator Interact(Transform initiator)
+    public override IEnumerator Interact(Transform initiator)
     {
         if (!Used)
         {
@@ -16,6 +13,7 @@ public class Pickup : MonoBehaviour, Interactable
             Used = true;
 
             gameObject.SetActive(false);
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
 
             string playerName = initiator.GetComponent<PlayerController>().Name;
 
@@ -24,4 +22,3 @@ public class Pickup : MonoBehaviour, Interactable
         }
     }
 }
- 

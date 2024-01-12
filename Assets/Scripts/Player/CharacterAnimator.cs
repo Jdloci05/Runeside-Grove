@@ -47,13 +47,13 @@ public class CharacterAnimator : MonoBehaviour
     {
         var prevAnim = currentAnim;
 
-        if (tag == "Player" && MoveX == 1)
+        if (MoveX == 1)
             currentAnim = defaultWalkRightAnim;
-        else if (tag == "Player" && MoveX == -1)
+        else if (MoveX == -1)
             currentAnim = defaultWalkLeftAnim;
-        else if (tag == "Player" && MoveY == 1)
+        else if (MoveY == 1)
             currentAnim = defaultWalkUpAnim;
-        else if (tag == "Player" && MoveY == -1)
+        else if (MoveY == -1)
             currentAnim = defaultWalkDownAnim;
 
         if (currentAnim != prevAnim || IsMoving != wasPreviouslyMoving)
