@@ -7,11 +7,28 @@ public class SkinManager : MonoBehaviour
     public GameObject Player;
     [SerializeField] WalletUI walletUI;
     public GameObject SkinUI;
-    public GameObject sk1, sk2, sk3, sk4, sk5, sk6;
-    public Sprite sp1, sp2, sp3, sp4, sp5, sp6;
+    public GameObject[] outfits;
+    private int Count;
+    public bool[] BuyOutfit;
+    public int[] prices;
+    public RuntimeAnimatorController[] animatorController;
 
-     void Update()
+    private void OnEnable()
     {
+        Count = 0;
+    }
+
+    void Update()
+    {
+        if(Count >= 4)
+        {
+            Count = 0;
+        } 
+        else if(Count <= -1)
+        {
+            Count = 3;
+        }
+
         if (SkinUI.activeSelf)
         {
             walletUI.Show();
@@ -22,127 +39,57 @@ public class SkinManager : MonoBehaviour
             }
                 
         }
-        
+
+        outfits[Count].SetActive(true);
+
     }
 
     public void NextOption()
     {
-        if(sk1.activeSelf)
-        {
-            sk1.SetActive(false);
-            sk2.SetActive(true);
-        }
-        else if(sk2.activeSelf)
-        {
-            sk2.SetActive(false);
-            sk3.SetActive(true);
-        }
-        else if (sk3.activeSelf)
-        {
-            sk3.SetActive(false);
-            sk4.SetActive(true);
-        }
-        else if (sk4.activeSelf)
-        {
-            sk4.SetActive(false);
-            sk5.SetActive(true);
-        }
-        else if (sk5.activeSelf)
-        {
-            sk5.SetActive(false);
-            sk6.SetActive(true);
-        }
-        else if (sk6.activeSelf)
-        {
-            sk6.SetActive(false);
-            sk1.SetActive(true);
-        }
+        Count += 1;
 
+        if (Count - 1 == -1)
+        {
+            outfits[3].SetActive(false);
+        }
+        else
+        {
+            outfits[Count - 1].SetActive(false);
+        }
+        
     }
 
     public void BackOption()
     {
-        if (sk1.activeSelf)
+        Count -= 1;
+
+        if (Count + 1 == 4)
         {
-            sk1.SetActive(false);
-            sk6.SetActive(true);
+            outfits[0].SetActive(false);
         }
-        else if (sk6.activeSelf)
+        else
         {
-            sk6.SetActive(false);
-            sk5.SetActive(true);
-        }
-        else if (sk5.activeSelf)
-        {
-            sk5.SetActive(false);
-            sk4.SetActive(true);
-        }
-        else if (sk4.activeSelf)
-        {
-            sk4.SetActive(false);
-            sk3.SetActive(true);
-        }
-        else if (sk3.activeSelf)
-        {
-            sk3.SetActive(false);
-            sk2.SetActive(true);
-        }
-        else if (sk2.activeSelf)
-        {
-            sk2.SetActive(false);
-            sk1.SetActive(true);
+            outfits[Count + 1].SetActive(false);
         }
     }
 
     public void PlayGame()
     {
-        if (sk1.activeSelf)
+        if (BuyOutfit[Count] == false && Wallet.i.money >= prices[Count])
         {
-            Player.GetComponent<SpriteRenderer>().sprite = sp1;
-            Player.transform.gameObject.tag = "Player";
+            Wallet.i.TakeMoney(prices[Count]);
+            Player.GetComponent<Animator>().runtimeAnimatorController = animatorController[Count];
             SkinUI.SetActive(false);
+        }
+        else if(BuyOutfit[Count] == false && Wallet.i.money < prices[Count])
+        {
 
-        }
-        else if (sk2.activeSelf)
+        }     
+        
+        if(BuyOutfit[Count] == true)
         {
-            Wallet.i.TakeMoney(300);
-            Player.GetComponent<SpriteRenderer>().sprite = sp2;
-            Player.transform.gameObject.tag = "Skin 2";
+            Player.GetComponent<Animator>().runtimeAnimatorController = animatorController[Count];
             SkinUI.SetActive(false);
-            walletUI.Close();
-
-        }
-        else if (sk3.activeSelf)
-        {
-            Wallet.i.TakeMoney(400);
-            Player.GetComponent<SpriteRenderer>().sprite = sp3;
-            Player.transform.gameObject.tag = "Skin 3";
-            SkinUI.SetActive(false);
-            walletUI.Close();
-        }
-        else if (sk4.activeSelf)
-        {
-            Wallet.i.TakeMoney(200);
-            Player.GetComponent<SpriteRenderer>().sprite = sp4;
-            Player.transform.gameObject.tag = "Skin 4";
-            SkinUI.SetActive(false);
-            walletUI.Close();
-        }
-        else if (sk5.activeSelf)
-        {
-            Wallet.i.TakeMoney(150);
-            Player.GetComponent<SpriteRenderer>().sprite = sp5;
-            Player.transform.gameObject.tag = "Skin 5";
-            SkinUI.SetActive(false);
-            walletUI.Close();
-        }
-        else if (sk6.activeSelf)
-        {
-            Wallet.i.TakeMoney(150);
-            Player.GetComponent<SpriteRenderer>().sprite = sp6;
-            Player.transform.gameObject.tag = "Skin 6";
-            SkinUI.SetActive(false);
-            walletUI.Close();
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Wallet : MonoBehaviour
 {
-    [SerializeField] float money;
+    public float money;
 
     public event Action OnMoneyChanged;
 
