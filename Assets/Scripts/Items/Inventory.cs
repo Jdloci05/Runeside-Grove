@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public enum ItemCategory { Items, Farming, Materials, Mining, Potions, Others}
+public enum ItemCategory { Items, Farming, Materials, Mining, Others}
 
 public class Inventory : MonoBehaviour
 {
@@ -21,12 +21,12 @@ public class Inventory : MonoBehaviour
 
     private void Awake()
     {
-        allSlots = new List<List<ItemSlot>>() { slots, landSlots, materialSlots, MineSlots, potionSlots, otherSlots };
+        allSlots = new List<List<ItemSlot>>() { slots, landSlots, materialSlots, MineSlots, otherSlots };
     }
 
     public static List<string> ItemCategories { get; set; } = new List<string>()
     {
-        "ITEMS", "FARMING", "MATERIALS", "MINING", "POTIONS", "OTHERS"
+        "ITEMS", "FARMING", "MATERIALS", "MINING", "OTHERS"
     };
 
     public List<ItemSlot> GetSlotsByCategory(int categoryIndex)
@@ -104,8 +104,6 @@ public class Inventory : MonoBehaviour
             return ItemCategory.Materials;
         else if (item is MinesItems)
             return ItemCategory.Mining;
-        else if (item is PotionItems)
-            return ItemCategory.Potions;
         else
             return ItemCategory.Others;
     }

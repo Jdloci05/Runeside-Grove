@@ -100,9 +100,9 @@ public class InventoryUI : MonoBehaviour
             {
                 UpdateItemSelection();
             }
-            if (GameController.Instance.State == GameState.Shop && Input.GetKeyDown(KeyCode.Z))
+            if (GameController.Instance.State == GameState.Shop && Input.GetKeyDown(KeyCode.E))
                 StartCoroutine(ItemSelected());
-            else if (Input.GetKeyDown(KeyCode.X))
+            else if (Input.GetKeyDown(KeyCode.Escape))
                 onBack?.Invoke();
         }
 

@@ -8,6 +8,7 @@ public enum ShopState { Menu, Buying, Selling, Busy}
 public class ShopController : MonoBehaviour
 {
     [SerializeField] InventoryUI inventoryUI;
+    public GameObject shopClothes;
     [SerializeField] WalletUI walletUI;
     [SerializeField] CountSelectorUI countSelectorUI;
 
@@ -42,9 +43,9 @@ public class ShopController : MonoBehaviour
         state = ShopState.Menu;
 
         int selectedChoice = 0;
-        yield return DialogManager.Instance.ShowDialogText("Welcome to the swap stores of rooster town How may I serve you",
+        yield return DialogManager.Instance.ShowDialogText("Welcome to the swap store How may I serve you",
             waitForInput: false,
-            choices: new List<string>() { "Sell", "Quit" },
+            choices: new List<string>() { "Sell", "Buy", "Quit" },
             onChoiceSelected: choiceIndex => selectedChoice = choiceIndex);
 
         if (selectedChoice == 0)
@@ -54,6 +55,12 @@ public class ShopController : MonoBehaviour
             inventoryUI.gameObject.SetActive(true);
         }
         else if (selectedChoice == 1)
+        {
+            //Buying
+            state = ShopState.Buying;
+            shopClothes.SetActive(true);
+        }
+        else if (selectedChoice == 2)
         {
             //Quit
             OnFinish?.Invoke();
@@ -73,6 +80,17 @@ public class ShopController : MonoBehaviour
     {
         inventoryUI.gameObject.SetActive(false);
         StartCoroutine(StartMenuState());
+    }
+
+    public void OnBackFromBuying()
+    {
+        shopClothes.SetActive(false);
+        StartCoroutine(StartMenuState());
+    }
+
+    public void Buyed()
+    {
+        OnFinish?.Invoke();
     }
 
     IEnumerator SellItem(ItemBase item)

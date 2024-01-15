@@ -7,15 +7,19 @@ public class SkinManager : MonoBehaviour
     public GameObject Player;
     [SerializeField] WalletUI walletUI;
     public GameObject SkinUI;
+    public GameObject noMoney;
     public GameObject[] outfits;
     private int Count;
     public bool[] BuyOutfit;
     public int[] prices;
     public RuntimeAnimatorController[] animatorController;
+    public GameObject[] textBuy;
+    public GameObject[] textPlay;
 
     private void OnEnable()
     {
         Count = 0;
+        noMoney.SetActive(false);
     }
 
     void Update()
@@ -34,8 +38,8 @@ public class SkinManager : MonoBehaviour
             walletUI.Show();
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SkinUI.SetActive(false);
                 walletUI.Close();
+                gameObject.GetComponent<ShopController>().OnBackFromBuying();
             }
                 
         }
@@ -78,19 +82,34 @@ public class SkinManager : MonoBehaviour
         if (BuyOutfit[Count] == false && Wallet.i.money >= prices[Count])
         {
             Wallet.i.TakeMoney(prices[Count]);
+            BuyOutfit[Count] = true;
             Player.GetComponent<Animator>().runtimeAnimatorController = animatorController[Count];
             SkinUI.SetActive(false);
+            walletUI.Close();
+            noMoney.SetActive(false);
+            textBuy[Count].SetActive(false);
+            textPlay[Count].SetActive(true);
+            gameObject.GetComponent<ShopController>().Buyed();
         }
         else if(BuyOutfit[Count] == false && Wallet.i.money < prices[Count])
         {
-
+            noMoney.SetActive(true);
+            Invoke("NoMoney", 5f);
         }     
         
         if(BuyOutfit[Count] == true)
         {
             Player.GetComponent<Animator>().runtimeAnimatorController = animatorController[Count];
             SkinUI.SetActive(false);
+            walletUI.Close();
+            noMoney.SetActive(false);
+            gameObject.GetComponent<ShopController>().Buyed();
         }
+    }
+
+    public void NoMoney()
+    {
+        noMoney.SetActive(false);
     }
 }
 

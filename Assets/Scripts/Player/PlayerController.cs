@@ -89,6 +89,7 @@ public class PlayerController : MonoBehaviour
         if ((col.tag == "ShopC"))
         {
             shopClothes.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }
