@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameLayers : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] LayerMask longGrassLayer;
     [SerializeField] LayerMask solidObjectsLayer;
     [SerializeField] LayerMask interactableLayer;
@@ -12,6 +14,9 @@ public class GameLayers : MonoBehaviour
 
     public static GameLayers i { get; set; }
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         i = this;
@@ -42,5 +47,6 @@ public class GameLayers : MonoBehaviour
         get => destroyinteracteable;
     }
 
+    #endregion
 
 }

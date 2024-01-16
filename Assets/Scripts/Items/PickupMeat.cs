@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickupMeat : Pickup
 {
+    #region IEnumerators
     public override IEnumerator Interact(Transform initiator)
     {
         if (!Used)
@@ -21,4 +22,6 @@ public class PickupMeat : Pickup
             yield return DialogManager.Instance.ShowDialogText($"{playerName} found {item.Name}");
         }
     }
+
+    #endregion
 }

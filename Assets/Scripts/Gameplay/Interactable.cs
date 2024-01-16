@@ -4,5 +4,8 @@ using UnityEngine;
 
 public interface Interactable 
 {
+    #region Inumerators
     IEnumerator Interact(Transform initiator);
+
+    #endregion
 }

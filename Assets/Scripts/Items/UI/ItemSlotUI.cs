@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class ItemSlotUI : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] Text nameText;
     [SerializeField] Text countText;
 
     RectTransform rectTransform;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         
@@ -26,4 +31,6 @@ public class ItemSlotUI : MonoBehaviour
         nameText.text = itemSlot.Item.Name;
         countText.text = $"X {itemSlot.Count}";
     }
+
+    #endregion
 }

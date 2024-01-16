@@ -5,7 +5,14 @@ using UnityEngine.UI;
 
 public class ChoiceText : MonoBehaviour
 {
+
+    #region Variables
+
     Text text;
+
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         text = GetComponent<Text>();
@@ -17,4 +24,6 @@ public class ChoiceText : MonoBehaviour
     }
 
     public Text TextField => text;
+
+    #endregion
 }

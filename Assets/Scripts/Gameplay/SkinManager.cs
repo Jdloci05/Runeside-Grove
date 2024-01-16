@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SkinManager : MonoBehaviour
 {
+    #region Variables
+
     public GameObject Player;
     [SerializeField] WalletUI walletUI;
     public GameObject SkinUI;
@@ -16,6 +18,10 @@ public class SkinManager : MonoBehaviour
     public GameObject[] textBuy;
     public GameObject[] textPlay;
 
+
+    #endregion
+
+    #region Methods
     private void OnEnable()
     {
         Count = 0;
@@ -111,6 +117,8 @@ public class SkinManager : MonoBehaviour
     {
         noMoney.SetActive(false);
     }
+
+    #endregion
 }
 
 

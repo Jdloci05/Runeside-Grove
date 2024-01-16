@@ -16,5 +16,5 @@ MonoBehaviour:
   description: wood is a common material but very sold as you can see a lot is built
     with it
   icon: {fileID: 370369029, guid: f61df8bb6a01f774f87ddc5f661c7685, type: 3}
-  price: 60
+  price: 2
   isSellable: 1

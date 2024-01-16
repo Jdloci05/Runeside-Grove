@@ -5,11 +5,17 @@ using UnityEngine;
 
 public class Wallet : MonoBehaviour
 {
+    #region Variables
+
     public float money;
 
     public event Action OnMoneyChanged;
 
     public static Wallet i { get; private set; }
+
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         i = this;
@@ -27,4 +33,6 @@ public class Wallet : MonoBehaviour
     }
 
     public float Money => money;
+
+    #endregion
 }

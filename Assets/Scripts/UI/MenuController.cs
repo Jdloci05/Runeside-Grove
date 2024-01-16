@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] GameObject menu;
 
     public event Action<int> onMenuSelected;
@@ -16,6 +18,9 @@ public class MenuController : MonoBehaviour
 
     int selectedItem = 0;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         menuItems = menu.GetComponentsInChildren<Text>().ToList();
@@ -46,12 +51,12 @@ public class MenuController : MonoBehaviour
         if (prevSelection != selectedItem)
             UpdateItemSelection();
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             onMenuSelected?.Invoke(selectedItem);
             CloseMenu();
         }
-        else if (Input.GetKeyDown(KeyCode.X))
+        else if (Input.GetKeyDown(KeyCode.Escape))
         {
             onBack?.Invoke();
             CloseMenu();
@@ -68,4 +73,6 @@ public class MenuController : MonoBehaviour
                 menuItems[i].color = Color.black;
         }
     }
+
+    #endregion
 }

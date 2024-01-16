@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class ItemGiver : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] ItemBase item;
     [SerializeField] int count = 1;
     [SerializeField] Dialog dialog;
 
     bool used = false;
 
+    #endregion
+
+    #region IEnumerator
     public IEnumerator GiveItem (PlayerController player)
     {
         yield return DialogManager.Instance.ShowDialog(dialog);
@@ -27,9 +32,14 @@ public class ItemGiver : MonoBehaviour
         yield return DialogManager.Instance.ShowDialogText(dialogText);
     }
 
+    #endregion
+
+    #region Methods
     public bool CanBeGiven()
     {
         return item != null && count > 0 && !used;
     }
+
+    #endregion
 
 }

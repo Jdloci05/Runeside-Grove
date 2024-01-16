@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ItemBase : ScriptableObject
 {
+    #region Variables
+
     [SerializeField] string name;
     [SerializeField] string description;
     [SerializeField] Sprite icon;
@@ -17,5 +19,7 @@ public class ItemBase : ScriptableObject
     public float Price => price;
 
     public bool IsSellable => isSellable;
+
+    #endregion
 
 }

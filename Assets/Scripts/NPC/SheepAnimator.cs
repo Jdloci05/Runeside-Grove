@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SheepAnimator : MonoBehaviour
 {
+    #region Variables
+
     public float MoveX { get; set; }
     public float MoveY { get; set; }
     public bool IsMoving { get; set; }
@@ -12,6 +14,9 @@ public class SheepAnimator : MonoBehaviour
 
     public bool left;
 
+    #endregion
+
+    #region Methods
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -50,4 +55,6 @@ public class SheepAnimator : MonoBehaviour
             animator.SetFloat("moveX", -1f);
         }
     }
+
+    #endregion
 }

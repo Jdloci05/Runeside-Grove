@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class MatchPosition : MonoBehaviour
 {
+    #region Variables
+
     public Transform target;  // El objeto cuya posición seguirá este objeto
 
+    #endregion
+
+    #region Methods
     void Update()
     {
         if (target != null)
@@ -14,5 +19,7 @@ public class MatchPosition : MonoBehaviour
             transform.position = target.position;
         }
     }
+
+    #endregion
 
 }

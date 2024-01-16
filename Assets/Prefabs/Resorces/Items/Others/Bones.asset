@@ -16,5 +16,5 @@ MonoBehaviour:
   description: Oh my God! They are bones, I suppose there will be someone to exchange
     them with
   icon: {fileID: -506176432, guid: 5c9dfe4205ac4dd4a8e2b622b3f6ed00, type: 3}
-  price: 20
+  price: 3
   isSellable: 1

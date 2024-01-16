@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpriteAnimator 
 {
+    #region Variables
+
     SpriteRenderer spriteRenderer;
     List<Sprite> frames;
     float frameRate;
@@ -11,6 +13,9 @@ public class SpriteAnimator
     int currentFrame;
     float timer;
 
+    #endregion
+
+    #region Methods
     public SpriteAnimator(List<Sprite> frames, SpriteRenderer spriteRenderer, float frameRate=0.16f)
     {
         this.frames = frames;
@@ -40,4 +45,6 @@ public class SpriteAnimator
     {
         get { return frames; }
     }
+
+    #endregion
 }

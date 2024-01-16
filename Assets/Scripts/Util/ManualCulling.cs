@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class ManualCulling : MonoBehaviour
 {
+    #region Variables
     public Transform[] objectsToCull; // Assign objects to cull in the Inspector
 
     private Camera mainCamera;
 
+    #endregion
+
+    #region Methods
     void Start()
     {
         mainCamera = Camera.main;        
@@ -54,5 +58,7 @@ public class ManualCulling : MonoBehaviour
             }
         }
     }
+
+    #endregion
 }
 

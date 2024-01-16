@@ -16,5 +16,5 @@ MonoBehaviour:
   description: 'Harvestable pumpkin: Slice for surprises. Vibrant orange, perfect
     for fall crafting. Adds flavor or fun to your journey'
   icon: {fileID: 1723690386, guid: 53d0a2668859cb24b9250ae28197df25, type: 3}
-  price: 100
+  price: 4
   isSellable: 1

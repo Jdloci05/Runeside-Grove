@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ChoiceBox : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] ChoiceText choiceTextPrefab;
 
     bool choiceSelected = false;
@@ -12,6 +14,9 @@ public class ChoiceBox : MonoBehaviour
     List<ChoiceText> choiceTexts;
     int currentChoice;
 
+    #endregion
+
+    #region IEnumerators
     public IEnumerator ShowChoices(List<string> choices, Action<int> onChoiceSelected)
     {
         choiceSelected = false;
@@ -37,6 +42,10 @@ public class ChoiceBox : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    #endregion
+
+    #region Methods
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
@@ -54,4 +63,6 @@ public class ChoiceBox : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
             choiceSelected = true;
     }
+
+    #endregion
 }

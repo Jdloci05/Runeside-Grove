@@ -7,6 +7,8 @@ public enum ShopState { Menu, Buying, Selling, Busy}
 
 public class ShopController : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] InventoryUI inventoryUI;
     public GameObject shopClothes;
     [SerializeField] WalletUI walletUI;
@@ -19,6 +21,10 @@ public class ShopController : MonoBehaviour
     Merchant merchant;
 
     public static ShopController i { get; private set; }
+
+    #endregion
+
+    #region methods Init
     private void Awake()
     {
         i = this;
@@ -30,6 +36,9 @@ public class ShopController : MonoBehaviour
         inventory = Inventory.GetInventory();
     }
 
+    #endregion
+
+    #region IEnumerators
     public IEnumerator StartTrading(Merchant merchant)
     {
         this.merchant = merchant;
@@ -68,6 +77,9 @@ public class ShopController : MonoBehaviour
         }
     }
 
+    #endregion
+
+    #region Methods
     public void HandleUpdate()
     {
         if (state == ShopState.Selling)
@@ -93,6 +105,7 @@ public class ShopController : MonoBehaviour
         OnFinish?.Invoke();
     }
 
+    #region IEnumerators
     IEnumerator SellItem(ItemBase item)
     {
         state = ShopState.Busy;
@@ -141,4 +154,7 @@ public class ShopController : MonoBehaviour
 
         state = ShopState.Selling;
     }
+    #endregion
+
+    #endregion
 }

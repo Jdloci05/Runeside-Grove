@@ -16,5 +16,5 @@ MonoBehaviour:
   description: 'Meat: A savory staple for crafting and trading. Enhance dishes or
     potions with its rich flavor. Vital for adventurers seeking strength and sustenance.'
   icon: {fileID: -1234751588, guid: 2e879084a094e0940aabff633a30d39b, type: 3}
-  price: 40
+  price: 3
   isSellable: 1

@@ -5,8 +5,13 @@ using UnityEngine.UI;
 
 public class WalletUI : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] Text moneyTxt;
 
+    #endregion
+
+    #region Methods
     private void Start()
     {
         Wallet.i.OnMoneyChanged += SetMoneyTxt;
@@ -27,4 +32,6 @@ public class WalletUI : MonoBehaviour
     {
         moneyTxt.text = "$ " + Wallet.i.Money;
     }
+
+    #endregion
 }

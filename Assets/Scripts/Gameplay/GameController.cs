@@ -3,13 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Dialog, Menu, Bag, Shop}
+public enum GameState { FreeRoam, Dialog, Menu, Bag, Shop, controls}
 
 public class GameController : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] PlayerController playerController;
     [SerializeField] Camera worldCamera;
     [SerializeField] InventoryUI inventoryUI;
+    [SerializeField] GameObject PauseUI;
+    MainMenu PauseMenuUI;
+
 
     GameState state;
     GameState prevState;
@@ -18,9 +23,13 @@ public class GameController : MonoBehaviour
 
     public static GameController Instance { get; private set; }
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         Instance = this;
+        PauseMenuUI = GetComponent<MainMenu>();
         menuController = GetComponent<MenuController>();
 
         //Cursor.lockState = CursorLockMode.Locked;
@@ -95,8 +104,35 @@ public class GameController : MonoBehaviour
             inventoryUI.gameObject.SetActive(true);
             state = GameState.Bag;
         }
+        else if (selectedItem == 1)
+        {
+            //Menu
+            PauseUI.SetActive(true);
+            Time.timeScale = 0f;
+            state = GameState.controls;
+            
+        }
+        else if (selectedItem == 2)
+        {
+            //Menu
+            PauseMenuUI.Back();
+        }
+        else if (selectedItem == 3)
+        {
+            //Quit
+            PauseMenuUI.Quit();
+        }
     }
 
+    public void Out()
+    {
+        PauseUI.SetActive(false);
+        Time.timeScale = 1f;
+        menuController.OpenMenu();
+        state = GameState.Menu;
+    }
     public GameState State => state;
+
+    #endregion
 
 }

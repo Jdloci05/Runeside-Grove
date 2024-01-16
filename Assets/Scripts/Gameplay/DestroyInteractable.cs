@@ -4,5 +4,8 @@ using UnityEngine;
 
 public interface DestroyInteractable
 {
+    #region IEnumerators
     IEnumerator Destroyinteracteable(Transform initiator);
+
+    #endregion
 }

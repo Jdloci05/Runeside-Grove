@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    #region Variables
+
     public string Name;
     private Vector2 input;
 
@@ -12,6 +14,9 @@ public class PlayerController : MonoBehaviour
 
     private Player player;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
 
@@ -58,6 +63,7 @@ public class PlayerController : MonoBehaviour
             
     }
 
+    #region IEnumeratorss
     IEnumerator Interact()
     {
         var facingDir = new Vector3(player.Animator.MoveX, player.Animator.MoveY);
@@ -84,12 +90,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if ((col.tag == "ShopC"))
-        {
-            shopClothes.SetActive(true);
-            Time.timeScale = 0f;
-        }
-    }
+    #endregion
+    #endregion
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SheepController : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPattern;
 
@@ -13,6 +15,9 @@ public class SheepController : MonoBehaviour
 
     Sheep character;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         character = GetComponent<Sheep>();
@@ -34,6 +39,7 @@ public class SheepController : MonoBehaviour
         character.HandleUpdate();
     }
 
+    #region IEnumerators Walk
     IEnumerator Walk()
     {
         state = SheepState.Walking;
@@ -47,7 +53,12 @@ public class SheepController : MonoBehaviour
 
         state = SheepState.Idle;
     }
+    #endregion
+
+    #endregion
 }
 
+#region Enum
 public enum SheepState { Idle, Walking }
 
+#endregion

@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour, Interactable
 {
+    #region Variables
+
     public ItemBase item;
 
     public bool Used { get; set; } = false;
+
+    #endregion
+
+    #region IEnumerators
     public virtual IEnumerator Interact(Transform initiator)
     {
         if (!Used)
@@ -23,5 +29,6 @@ public class Pickup : MonoBehaviour, Interactable
             yield return DialogManager.Instance.ShowDialogText($"{playerName} found {item.Name}");
         }
     }
+
+    #endregion
 }
- 

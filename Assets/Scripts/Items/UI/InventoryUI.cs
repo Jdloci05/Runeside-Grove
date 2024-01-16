@@ -9,12 +9,13 @@ public enum InventoryUIState { ItemSelection, Busy}
 
 public class InventoryUI : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] GameObject itemList;
     [SerializeField] ItemSlotUI itemSlotUI;
 
     [SerializeField] Text categoryText;
     [SerializeField] Image itemIcon;
-    [SerializeField] Sprite emptyIcon;
     [SerializeField] Text itemDescription;
 
     [SerializeField] Image upArrow;
@@ -33,6 +34,9 @@ public class InventoryUI : MonoBehaviour
     Inventory inventory;
     RectTransform itemListRect;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         inventory = Inventory.GetInventory();
@@ -108,6 +112,8 @@ public class InventoryUI : MonoBehaviour
 
     }
 
+
+    #region IEnumerators
     IEnumerator ItemSelected()
     {
         state = InventoryUIState.Busy;
@@ -123,8 +129,12 @@ public class InventoryUI : MonoBehaviour
 
     }
 
+    #endregion
+
     void UpdateItemSelection()
     {
+        Color currentColor = itemIcon.color;
+
         var slots = inventory.GetSlotsByCategory(selectedCategory);
 
         selectedItem = Mathf.Clamp(selectedItem, 0, slots.Count - 1);
@@ -139,13 +149,16 @@ public class InventoryUI : MonoBehaviour
 
         if (slots.Count > 0)
         {
+            currentColor.a = 255f;
+            itemIcon.color = currentColor;
             var item = slots[selectedItem].Item;
             itemIcon.sprite = item.Icon;
             itemDescription.text = item.Description;
         }
         else if(slots.Count == 0)
         {
-            itemIcon.sprite = emptyIcon;
+            currentColor.a = 0f;
+            itemIcon.color = currentColor;
         }
 
         HandleScrolling();
@@ -176,5 +189,7 @@ public class InventoryUI : MonoBehaviour
         itemIcon.sprite = null;
         itemDescription.text = "";
     }
+
+    #endregion
 
 }

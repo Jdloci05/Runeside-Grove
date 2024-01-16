@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] List<AudioData> sfxList;
 
     [SerializeField] AudioSource musicPlayer;
@@ -17,6 +19,9 @@ public class AudioManager : MonoBehaviour
     float originalMusicVol;
     Dictionary<AudioId, AudioData> sfxLookup;
 
+    #endregion
+
+    #region Methods
     public static AudioManager i { get; private set; }
     private void Awake()
     {
@@ -59,6 +64,9 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(PlayMusicAsync(clip, loop, fade));
     }
 
+    #endregion
+
+    #region IEnumerator 
     IEnumerator PlayMusicAsync(AudioClip clip, bool loop, bool fade)
     {
         if (fade)
@@ -80,7 +88,11 @@ public class AudioManager : MonoBehaviour
         musicPlayer.UnPause();
         musicPlayer.DOFade(originalMusicVol, fadeDuration);
     }
+
+    #endregion
 }
+
+#region Others 
 
 public enum AudioId { UISelect, ItemObtained}
 
@@ -91,3 +103,5 @@ public class AudioData
     public AudioId id;
     public AudioClip clip;
 }
+
+#endregion

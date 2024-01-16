@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NPCController : MonoBehaviour, Interactable
 {
+    #region Variables
 
     [SerializeField] Dialog dialog;
     [SerializeField] List<Vector2> movementPattern;
@@ -17,6 +18,9 @@ public class NPCController : MonoBehaviour, Interactable
     ItemGiver itemGiver;
     Merchant merchant;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         character = GetComponent<Character>();
@@ -24,6 +28,7 @@ public class NPCController : MonoBehaviour, Interactable
         merchant = GetComponent<Merchant>();
     }
 
+    #region IEnumerators
     public IEnumerator Interact(Transform initiator)
     {
         if (state == NPCState.Idle)
@@ -52,6 +57,8 @@ public class NPCController : MonoBehaviour, Interactable
 
     }
 
+    #endregion
+
     private void Update()
     {
         if (state == NPCState.Idle)
@@ -68,6 +75,7 @@ public class NPCController : MonoBehaviour, Interactable
         character.HandleUpdate();
     }
 
+    #region IEnumerators
     IEnumerator Walk()
     {
         state = NPCState.Walking;
@@ -81,6 +89,13 @@ public class NPCController : MonoBehaviour, Interactable
 
         state = NPCState.Idle;
     }
+
+    #endregion
+
+    #endregion
 }
 
+#region Others
 public enum NPCState { Idle, Walking, Dialog}
+
+#endregion

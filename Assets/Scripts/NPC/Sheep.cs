@@ -5,17 +5,23 @@ using UnityEngine;
 
 public class Sheep : MonoBehaviour
 {
+    #region Variables
+
     public float moveSpeed;
 
     public bool IsMoving { get; private set; }
 
     SheepAnimator animator;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         animator = GetComponent<SheepAnimator>();
     }
 
+    #region IEnumerator Move
     public IEnumerator Move(Vector3 moveVec, Action OnMoveOver = null)
     {
         animator.MoveX = Mathf.Clamp(moveVec.x, -1f, 1f);
@@ -41,6 +47,9 @@ public class Sheep : MonoBehaviour
 
         OnMoveOver?.Invoke();
     }
+
+    #endregion
+
 
     public void HandleUpdate()
     {
@@ -84,4 +93,6 @@ public class Sheep : MonoBehaviour
     {
         get => animator;
     }
+
+    #endregion
 }

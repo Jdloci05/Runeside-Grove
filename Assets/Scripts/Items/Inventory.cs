@@ -8,6 +8,8 @@ public enum ItemCategory { Items, Farming, Materials, Mining, Others}
 
 public class Inventory : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] List<ItemSlot> slots;
     [SerializeField] List<ItemSlot> landSlots;
     [SerializeField] List<ItemSlot> materialSlots;
@@ -17,8 +19,11 @@ public class Inventory : MonoBehaviour
 
     List<List<ItemSlot>> allSlots;
 
-    public event Action OnUpdated; 
+    public event Action OnUpdated;
 
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         allSlots = new List<List<ItemSlot>>() { slots, landSlots, materialSlots, MineSlots, otherSlots };
@@ -107,7 +112,11 @@ public class Inventory : MonoBehaviour
         else
             return ItemCategory.Others;
     }
+
+    #endregion
 }
+
+#region Others
 
 [Serializable]
 public class ItemSlot
@@ -126,3 +135,5 @@ public class ItemSlot
         set => count = value;
     }
 }
+
+#endregion

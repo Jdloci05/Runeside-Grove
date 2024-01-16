@@ -16,5 +16,5 @@ MonoBehaviour:
   description: 'Gold Sack: A coveted treasure. Radiates with golden brilliance, signifying
     wealth. Essential for adventurers seeking prosperity.'
   icon: {fileID: 1890904793, guid: f1b0bfcbe1530ec4a9e4790b9797d502, type: 3}
-  price: 300
+  price: 5
   isSellable: 1

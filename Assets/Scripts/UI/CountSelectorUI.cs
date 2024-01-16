@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class CountSelectorUI : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] Text countTxt;
     [SerializeField] Text priceTxt;
 
@@ -15,6 +17,9 @@ public class CountSelectorUI : MonoBehaviour
     int maxCount;
     float pricePerUnit;
 
+    #endregion
+
+    #region IEnumerators
     public IEnumerator ShowSelector (int maxCount, float pricePerUnit, Action<int> onCountSelected)
     {
         this.maxCount = maxCount;
@@ -32,6 +37,9 @@ public class CountSelectorUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    #endregion
+
+    #region Methods
     private void Update()
     {
         int prevCount = currentCount;
@@ -55,4 +63,6 @@ public class CountSelectorUI : MonoBehaviour
         countTxt.text = "x " + currentCount;
         priceTxt.text = "$ " + pricePerUnit * currentCount;
     }
+
+    #endregion
 }

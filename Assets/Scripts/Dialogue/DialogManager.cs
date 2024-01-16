@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
+    #region Variables
+
     [SerializeField] GameObject dialogBox;
     [SerializeField] ChoiceBox choiceBox; 
     [SerializeField] Text dialogText;
@@ -15,12 +17,31 @@ public class DialogManager : MonoBehaviour
     public event Action OnCloseDialog;
 
     public static DialogManager Instance { get; private set; }
+
+    #endregion
+
+    #region Methods
     private void Awake()
     {
         Instance = this;
     }
 
+    public void HandleUpdate()
+    {
+
+    }
+
+    public void CloseDialog()
+    {
+        dialogBox.SetActive(false);
+        IsShowing = false;
+
+    }
+
     public bool IsShowing { get; private set; }
+    #endregion
+
+    #region IEnumerators
 
     public IEnumerator ShowDialogText(string text, bool waitForInput = true, bool autoClose = true, List<string> choices = null, Action<int> onChoiceSelected = null)
     {
@@ -47,12 +68,6 @@ public class DialogManager : MonoBehaviour
         OnCloseDialog?.Invoke();
     }
 
-    public void CloseDialog()
-    {
-        dialogBox.SetActive(false);
-        IsShowing = false;
-        
-    }
 
     public IEnumerator ShowDialog(Dialog dialog, List<string> choices=null, Action<int> onChoiceSelected=null)
     {
@@ -81,10 +96,7 @@ public class DialogManager : MonoBehaviour
         OnCloseDialog?.Invoke();
     }
 
-    public void HandleUpdate()
-    {
 
-    }
 
     public IEnumerator TypeDialog(string line)
     {
@@ -95,4 +107,6 @@ public class DialogManager : MonoBehaviour
             yield return new WaitForSeconds(1f / lettersPerSecond);
         }
     }
+
+    #endregion
 }
