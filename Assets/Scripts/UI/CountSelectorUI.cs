@@ -54,7 +54,7 @@ public class CountSelectorUI : MonoBehaviour
         if (currentCount != prevCount)
             SetValues();
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.E))
             selected = true;
     }
 

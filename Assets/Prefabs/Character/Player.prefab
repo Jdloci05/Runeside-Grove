@@ -150,7 +150,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines:
-    - where I am? who I am?... What is this place?
+    - Welcome, adventurer, to the Ancient Realms. Your journey begins now
+    - As a humble peon in the Yellow Kingdom, discover the mysteries, trade wisely,
+      and ascend to legend
+    - Gather wood, meat, mushrooms, and gold; they're your tools, currency, and the
+      key to changing your destiny
+    - Venture forth, explore, and converse with inhabitants. Wise guidance and bold
+      challenges await
+    - As the sun sets and rises, your adventure unfolds. Embrace the journey, noble
+      adventurer
   movementPattern: []
   timeBetweenPattern: 0
 --- !u!114 &836265837
@@ -182,15 +190,8 @@ MonoBehaviour:
   defaultWalkUpSprites: []
   defaultWalkRightSprites: []
   defaultWalkLeftSprites: []
-  skin2WalkRightSprites: []
-  skin2WalkLeftSprites: []
-  skin3WalkRightSprites: []
-  skin3WalkLeftSprites: []
-  skin4WalkRightSprites: []
-  skin4WalkLeftSprites: []
   defaultSkin:
   - {fileID: -400449740, guid: b6d26024a03ed524d86cfc53a449d49f, type: 3}
-  IsPlayer: 0
 --- !u!1 &5064420241628108643
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +256,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -381,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7a41ffc454c39488679f5d76b019e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Sr,Rooster
+  Name: Alden
   shopClothes: {fileID: 0}
 --- !u!50 &3604466729303829540
 Rigidbody2D:
@@ -466,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc406db11975b445976be9c87199d4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 1000
+  money: 0
 --- !u!95 &8380578799521186623
 Animator:
   serializedVersion: 4

@@ -10,8 +10,6 @@ public class PlayerController : MonoBehaviour
     public string Name;
     private Vector2 input;
 
-    public GameObject shopClothes;
-
     private Player player;
 
     #endregion

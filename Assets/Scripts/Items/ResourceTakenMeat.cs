@@ -9,6 +9,7 @@ public class ResourceTakenMeat : ResourceTaken
     {
         gameObject.SetActive(false);
         pickup.GetComponent<SpriteRenderer>().enabled = true;
+        pickup.GetComponent<PickupMeat>().IsInteractable = true;
     }
 
     #endregion
